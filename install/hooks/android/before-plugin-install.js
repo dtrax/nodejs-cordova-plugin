@@ -32,7 +32,7 @@ function unzipAll(callback) {
 }
 
 module.exports = function(context) {
-  var Q = context.requireCordovaModule('q');
+  var Q = require('q');
   var deferral = new Q.defer();
 
   // Create the node project folder if it doesn't exist
